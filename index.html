@@ -88,12 +88,12 @@ NAV (comentado)
     <div class="hero-overlay"></div>
     <div class="hero-grain" aria-hidden="true"></div>
   </div>
-  <div class="hero-content fade-up d2">
+  <div class="hero-content animate-on-scroll d2">
     <h1><em>Seus traços faciais com<br class="mobile-br"> máxima naturalidade.</em></h1>
-    <p class="hero-sub fade-up d3">
+    <p class="hero-sub animate-on-scroll d3">
       Protocolos personalizados criados para realçar seus traços, devolver a firmeza e estruturar o contorno do seu rosto, preservando sempre a sua identidade.
     </p>
-    <div class="hero-actions fade-up d4">
+    <div class="hero-actions animate-on-scroll d4">
       <a href="#contato" class="btn-primary">Quero minha consulta personalizada</a>
     </div>
   </div>
@@ -359,7 +359,7 @@ NAV (comentado)
     });
   }, { threshold: 0.08 });
 
-  document.querySelectorAll('.ba-card, .contact-inner, .about-inner').forEach(el => {
+  document.querySelectorAll('.ba-card, .contact-inner, .about-inner, .hero-content, .hero-sub, .hero-actions').forEach(el => {
     el.classList.add('animate-on-scroll');
     observer.observe(el);
   });
